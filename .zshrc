@@ -10,17 +10,14 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"  # This loads nvm bash_completion
 export PATH="/usr/local/opt/ruby/bin:$PATH"
 export PATH="/Users/zhongyuanjin/Sourcecode/macos-config/shellscripts:$PATH"
-export PATH="/Users/zhongyuanjin/Sourcecode/macos-config:$PATH"
 export LDFLAGS="-L/usr/local/opt/ruby/lib"
 export PATH="/usr/local/opt/flutter/bin:$PATH"
 export CPPFLAGS="-I/usr/local/opt/ruby/include"
 export PATH="$PATH:$(ruby -e 'puts Gem.bindir')"
 
-alias lens='node /Users/zhongyuanjin/Sourcecode/SpotifyLens/run.js'
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 source $(dirname $(gem which colorls))/tab_complete.sh
 
-alias frun='flutter emulators --launch apple_ios_simulator'
 
 #------------------
 # Zsh hooks
@@ -30,8 +27,8 @@ alias frun='flutter emulators --launch apple_ios_simulator'
 autoload -U add-zsh-hook
 
 # Load NVM and NVM bash completion
-# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" 
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" 
 
 # Automatically switch and load node versions when a directory has a `.nvmrc` file
 load-nvmrc() {

@@ -1,4 +1,4 @@
 
-cp ~/.hyper.js /Users/zhongyuanjin/Sourcecode/macos-config
-cp ~/.zshrc /Users/zhongyuanjin/Sourcecode/macos-config
-cp ~/.vimrc /Users/zhongyuanjin/Sourcecode/macos-config
+cp ~/.hyper.js ~/Sourcecode/macos-config
+cp ~/.zshrc ~/Sourcecode/macos-config
+cp ~/.vimrc ~/Sourcecode/macos-config

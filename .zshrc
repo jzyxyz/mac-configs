@@ -3,11 +3,10 @@
 alias home="cd ~"
 export PATH="~/Sourcecode/macos-config/shellscripts:$PATH"
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/jin/.oh-my-zsh"
+export ZSH="~/.oh-my-zsh"
 alias change="code ~/.zshrc"
 alias update="source ~/.zshrc"
 export LDFLAGS="-L/usr/local/opt/ruby/lib"
-export PATH="/usr/local/opt/flutter/bin:$PATH"
 export CPPFLAGS="-I/usr/local/opt/ruby/include"
 export PATH="$PATH:$(ruby -e 'puts Gem.bindir')"
 
